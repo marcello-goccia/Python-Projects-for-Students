@@ -42,11 +42,12 @@ No output required; simply return the result 3.0 to the main function.
 
 //PREPEND BEGIN
 #include <iostream>
+#include <iomanip>
 using namespace std;
 //PREPEND END
 
 //TEMPLATE BEGIN
-__ CalculateAverage(__, __)
+float CalculateAverage(__, __)
 {
 
 }
@@ -62,7 +63,7 @@ int main()
     {
         cin >> arr[i];
     }
-    cout << CalculateAverage(arr, n);
+    cout << st::fixed << steprecision(1) << CalculateAverage(n, arr);
     return 0;
 }
 //APPEND END
