@@ -11,7 +11,7 @@ A single integer greater than zero.
 All even numbers from 1 to n, one number per line.
 
 ## Input Samples
-10**
+10
 
 ## Output Samples
 2

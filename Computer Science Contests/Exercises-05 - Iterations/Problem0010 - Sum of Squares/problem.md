@@ -3,7 +3,7 @@ Sum of Squares
 
 ## Description
 Write a program that calculates the sum of the squares of all integers from 1 to n.
-(e.g. for n = 3, calculate 1^2 + 2^2 + 3^3 = 14)
+(e.g. for n = 3, calculate 1^2 + 2^2 + 3^2 = 14)
 
 ## Input Description
 A single positive integer
