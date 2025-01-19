@@ -2,7 +2,7 @@
 Repeat String
 
 ## Description
-Write a function repeat_string that takes a string and an integer as parameters and returns the string repeated n times.
+Write a function named repeat_string that takes a string and an integer as parameters and returns the string repeated n times.
 
 ## Input Description
 The function receives a string s and an integer n.
@@ -29,9 +29,7 @@ hellohellohello
 
 //TEMPLATE BEGIN
 
-def repeat_string(s, n):
-    # TODO: Write your code here
-    pass
+# TODO: Write your code here
   
 //TEMPLATE END
 

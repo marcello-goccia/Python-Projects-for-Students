@@ -2,7 +2,7 @@
 Check if Number is Even
 
 ## Description
-Write a function is_even that takes an integer n and returns True if n is even, and False otherwise.
+Write a function named is_even that takes an integer n and returns True if n is even, and False otherwise.
 
 Note: You only need to implement the function is_even, not any input or output handling.
 
@@ -26,9 +26,7 @@ True
 
 //TEMPLATE BEGIN
 
-def is_even(__):
-    # TODO: Write your code here
-    pass
+# TODO: Write your code here
 
 //TEMPLATE END
 

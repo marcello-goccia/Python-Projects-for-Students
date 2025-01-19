@@ -2,7 +2,7 @@
 Print Numbers Except 3 and 6
 
 ## Description
-Write a function print_numbers that returns all the numbers from 0 to 6 except 3 and 6. 
+Write a procedure print_numbers that prints all the numbers from 0 to 6 except 3 and 6. 
 
 Use the continue statement to skip printing the excluded numbers.
 
@@ -10,7 +10,7 @@ Use the continue statement to skip printing the excluded numbers.
 There is no input for this problem.
 
 ## Output Description
-The procedure should return the numbers from 0 to 6, excluding 3 and 6.
+The procedure should print the numbers from 0 to 6, excluding 3 and 6.
 
 ## Input Samples
 
@@ -29,13 +29,16 @@ The procedure should return the numbers from 0 to 6, excluding 3 and 6.
 
 def print_numbers():
     # TODO: Write your code here
+    # Use print(i, end=" ") to print the number followed by a space, 
+    # so that all numbers appear on the same line.
+
     pass
   
 //TEMPLATE END
 
 
 //APPEND BEGIN
-# Call the function to test its behavior
+# Call the procedure to test its behavior
 print_numbers()
 
 # Additional validations

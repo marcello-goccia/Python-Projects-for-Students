@@ -2,15 +2,15 @@
 Multiply Two Numbers
 
 ## Description
-Write a function multiply_two_numbers that takes in two integers as parameters and returns their product.
+Write a function named multiply_two_numbers that takes two integers as parameters and returns their product.
 
-Note: You only need to implement the function multiply_two_numbers, not any input or output handling.
+Note: You only need to implement the function multiply_two_numbers, without worrying about input or output handling.
 
 ## Input Description
 The function receives two integer parameters, a and b.
 
 ## Output Description
-The function should return a single integer representing the product of a and b.
+The function should return a single integer that represents the product of the two input integers.
 
 ## Input Samples
 4 5
@@ -31,7 +31,7 @@ import math  # Example of import statements or constants
 
 //TEMPLATE BEGIN
 
-def multiply_two_numbers(__, ___):
+def multiply_two_numbers(___, ___):
     # TODO: Write your code here
     pass
 

@@ -2,7 +2,7 @@
 Convert Temperatures Between Celsius and Fahrenheit
 
 ## Description
-Write a function convert_temperature that takes two parameters:
+Write a function named convert_temperature that takes two parameters:
 
 temp (a float): The temperature value to convert.
 unit (a string): The unit of the temperature to convert from ('C' for Celsius, 'F' for Fahrenheit).
@@ -38,9 +38,7 @@ An integer representing the converted temperature.
 
 //TEMPLATE BEGIN
 
-def convert_temperature(temp, unit):
-    # TODO: Write your code here
-    pass
+# TODO: Write your code here
 
 //TEMPLATE END
 

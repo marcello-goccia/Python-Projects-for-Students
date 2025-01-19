@@ -1,5 +1,5 @@
 ## Title
-Check Substring Presence
+Extract a substring
 
 ## Description
 Write a program to extract the first 5 characters of a string and print them.
