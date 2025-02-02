@@ -5,7 +5,7 @@ Find the Maximum Value in a 2D List
 You are given a 2D list (matrix). Write a program to find the maximum value in the matrix.
 
 ## Input Description:
-The variable matrix is already initialized with a 2D list of integers.
+The variable "matrix" is already initialized with a 2D list of integers.
 You need to find and print the maximum value in the matrix.
 
 ## Output Description:

@@ -35,3 +35,8 @@ for i in range(n):
 
 
 ## Solution
+# Check if the matrix is empty
+if not matrix or all(not row for row in matrix):
+    print(True)
+else:
+    print(False)

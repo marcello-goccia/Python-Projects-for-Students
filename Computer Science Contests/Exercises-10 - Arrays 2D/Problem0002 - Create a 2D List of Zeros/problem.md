@@ -2,14 +2,14 @@
 Create a 2D List of Zeros
 
 ## Description
-Write a program that creates a 2D list (matrix) with n rows and m columns, filled with zeros.
+Write a program that creates a 2D list with n rows and m columns, filled with zeros.
 
 ## Input Description
-You are given two integers: first n (number of rows) followed by m (number of columns).
-You need to create a 2D list with n rows and m columns, where all elements are initialized to zero.
+You are given two integers: the first representing the number of rows and the second representing the number of columns.
+You need to create a 2D list with the specified number of rows and columns, where all elements are initialized to zero.
 
 ## Output Description
-Print the created 2D list row by row, see output sample..
+Print the created 2D list row by row, see output sample.
 
 ## Input Samples
 2

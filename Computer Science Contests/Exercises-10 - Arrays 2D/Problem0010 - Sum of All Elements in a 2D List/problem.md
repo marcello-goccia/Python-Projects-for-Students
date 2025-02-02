@@ -5,7 +5,7 @@ Sum of All Elements in a 2D List
 You are given a 2D list (matrix). Write a program to calculate the sum of all the elements in the matrix.
 
 ## Input Description
-The variable matrix is already initialized with a 2D list of integers.
+The variable "matrix" is already initialized with a 2D list of integers.
 You need to calculate and print the sum of all the elements in the matrix.
 
 

@@ -34,39 +34,6 @@ The matrix should contain integers starting from 0, increasing by 1, row by row.
 4 5 6 7
 
 
-
-
-## 3 Hidden Test Cases (Input/Output) for validate code
-
-### Test Case 1
-#### Input
-5
-1
-#### Output
-0
-1
-2
-3
-4
-
-### Test Case 2
-#### Input
-1
-5
-#### Output
-0 1 2 3 4
-
-### Test Case 3
-#### Input
-4
-4
-#### Output
-0 1 2 3
-4 5 6 7
-8 9 10 11
-12 13 14 15## 3 Hidden Test Cases (Input/Output) for validate code
-
-
 ## 3 Hidden Test Cases (Input/Output) for validate code
 5
 1

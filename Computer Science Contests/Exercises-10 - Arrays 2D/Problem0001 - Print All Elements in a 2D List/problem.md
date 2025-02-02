@@ -2,7 +2,7 @@
 Print All Elements in a 2D List
 
 ## Description
-You are given a 2D list (matrix). Write a program to print all the elements in the matrix, one by one.
+You are given a 2D list. Write a program to print all the elements in the matrix, one by one.
 
 ## Input Description
 The variable "matrix" is already initialized with a 2D list of integers.

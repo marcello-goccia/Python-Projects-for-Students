@@ -2,11 +2,10 @@
 Print the First Element of a 2D List
 
 ## Description
-You are given a 2D list.
-Write a program to print the first element of the first row in the matrix.
+You are given a 2D list. Write a program to print the first element of the first row in the matrix.
 
 ## Input Description
-The variable matrix is already initialized with a 2D list of integers.
+The variable "matrix" is already initialized with a 2D list of integers.
 You need to print the first element of the first row.
 
 ## Output Description
