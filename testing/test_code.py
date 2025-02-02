@@ -13,7 +13,13 @@ for row in range(n):
         matrix[row][col] = counter
         counter += 1
 
-print(matrix)
+# for row in range(n):
+#     for col in range(m):
+#         if col == m - 1:
+#             print(matrix[row][col])
+#         else:
+#             print(matrix[row][col], end=' ')
+
 # 3
 # 1 2 3
 # 4 5 6
