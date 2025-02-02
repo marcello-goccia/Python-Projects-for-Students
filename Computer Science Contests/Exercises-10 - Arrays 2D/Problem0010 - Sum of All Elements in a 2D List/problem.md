@@ -49,4 +49,16 @@ for row in matrix:
         print(element)
 
 ## Solution
-solution please
+
+# Initialize the sum variable
+total_sum = 0
+
+# Iterate through each row in the matrix
+for row in matrix:
+    # Iterate through each element in the row
+    for element in row:
+        # Add the element to the total sum
+        total_sum += element
+
+# Print the total sum
+print(total_sum)

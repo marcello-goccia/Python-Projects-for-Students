@@ -1,9 +1,3 @@
-
-10. Sum of All Elements in a 2D List 
-11. Find the Maximum Value in a 2D List
-12. Find the Average of All Elements in a 2D List 
-13. Check if an Element Exists in a 2D List
-
 ## Title
 Print All Elements in a 2D List
 
