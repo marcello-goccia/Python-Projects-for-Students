@@ -45,7 +45,6 @@ numbers = list(map(int, input().split()))  # The existing list is already initia
 
 
 ## Solution
-numbers = list(map(int, input().split()))  # The existing list is already initialized
 x = int(input())  # First element to add
 y = int(input())  # Second element to add
 numbers.append(x)
