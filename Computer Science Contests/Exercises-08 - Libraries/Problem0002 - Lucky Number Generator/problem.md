@@ -2,7 +2,9 @@
 Lucky Number Generator
 
 ## Description
-Write a function generate_lucky_number that takes two integers (start and end) and returns a random number between them (inclusive).
+Write a function def generate_lucky_number(start, end):
+    return random.randint(start, end)def generate_lucky_number(start, end):
+        return random.randint(start, end) that takes two integers (start and end) and returns a random number between them (inclusive).
 
 ## Input Description
 Two space-separated integers representing the range.
@@ -42,3 +44,8 @@ print(int(output/10))
 #result = generate_lucky_number(50, 55)
 #assert 50 <= result <= 55
 #APPEND END
+
+## Solution
+import random
+def generate_lucky_number(start, end):
+    return random.randint(start, end)   
