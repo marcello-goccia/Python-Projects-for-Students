@@ -39,22 +39,6 @@ print(round_number(variable))  # Display result to validate
 //APPEND END
 
 
-
-#TEMPLATE BEGIN
-def round_number(num):
-    # TODO: Write your code here
-    pass
-#TEMPLATE END
-
-#APPEND BEGIN
-# Read input
-x = float(input())
-
-# Call function and print result
-print(round_number(x))
-
-#APPEND END
-
 ## Solution
 def round_number(num):
     return int(round(num))

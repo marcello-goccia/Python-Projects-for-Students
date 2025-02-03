@@ -49,3 +49,9 @@ else:
 #result = roll_dice(3)
 #assert 3 <= result <= 18
 #APPEND END
+
+## Solution
+import random
+
+def roll_dice(num_dice):
+    return sum(random.randint(1, 6) for _ in range(num_dice))

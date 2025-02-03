@@ -18,17 +18,16 @@ An integer representing the rounded Fahrenheit temperature.
 43
 
 
-#PREPEND BEGIN
-import random
-#PREPEND END
+//PREPEND BEGIN
+//PREPEND END
 
-#TEMPLATE BEGIN
+//TEMPLATE BEGIN
 def convert_temperature(min_celsius, max_celsius):
     # TODO: Write your code here
     pass
-#TEMPLATE END
+//TEMPLATE END
 
-#APPEND BEGIN
+//APPEND BEGIN
 # Read input
 x = input()
 min_celsius, max_celsius = map(int, x.split())
@@ -50,4 +49,11 @@ else:
 #assert 32 <= result <= 50
 #result = convert_temperature(20, 30)
 #assert 68 <= result <= 86
-#APPEND END
+// APPEND END
+
+## Solution 
+import random
+def convert_temperature(min_celsius, max_celsius):
+    celsius = random.randint(min_celsius, max_celsius)
+    fahrenheit = (celsius * 9/5) + 32
+    return round(fahrenheit)

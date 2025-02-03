@@ -5,7 +5,7 @@ Price Formatter
 Write a function format_price that takes a float price and returns it rounded to exactly 2 decimal places.
 
 ## Input Description
-A single line containing a float number representing a price.
+A float number representing a price.
 
 ## Output Description
 A float number rounded to exactly 2 decimal places.
@@ -34,10 +34,15 @@ price = float(input())
 # Call function and print result
 output = format_price(price)
 
-print(f"{output:.2f}")
+print(output)
 
 # Test cases
 #assert format_price(3.567) == 3.57
 #assert format_price(10.123) == 10.12
 #assert format_price(2.999) == 3.00
 #APPEND END
+
+## Solution
+def format_price(price):
+    return round(price, 2)
+```
