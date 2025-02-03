@@ -9,10 +9,11 @@ Regular customers: 10% discount on purchases over $100
 Premium customers: 20% discount on purchases over $200
 Discounts are applied only to the amount exceeding the threshold
 
-Write a function apply_discount that takes the total purchase and the customer type and returns the final price after applying appropriate discount (float)
+Write a function apply_discount that takes the total purchase and the customer type as input parameters and returns the final price after applying appropriate discount (float)
 
 
 ## Input Description
+Two input parameters:
 Total purchase amount (float)
 Customer type (string: 'new', 'regular', or 'premium')
 
@@ -27,17 +28,15 @@ Final price after applying appropriate discount (float)
 
 
 
-#PREPEND BEGIN
+// PREPEND BEGIN
 # No imports needed
-#PREPEND END
+// PREPEND END
 
-#TEMPLATE BEGIN
-def apply_discount(total_purchase, customer_type):
-    # TODO: Write your code here
-    pass
-#TEMPLATE END
+// TEMPLATE BEGIN
+# Write your code here
+// TEMPLATE END
 
-#APPEND BEGIN
+// APPEND BEGIN
 # Read input
 x = input()
 total_purchase, customer_type = x.split()
@@ -48,8 +47,16 @@ total_purchase = float(total_purchase)
 output = apply_discount(total_purchase, customer_type)
 print(int(output))
 
-# Test cases
-#assert apply_discount(100, 'new') == 100
-#assert apply_discount(200, 'regular') == 180
-#assert apply_discount(500, 'premium') == 400
-#APPEND END
+// APPEND END
+
+## Solution
+def apply_discount(total_purchase, customer_type):
+    if customer_type == 'new':
+        return total_purchase
+    elif customer_type == 'regular' and total_purchase > 100:
+        return total_purchase - (total_purchase - 100) * 0.10
+    elif customer_type == 'premium' and total_purchase > 200:
+        return total_purchase - (total_purchase - 200) * 0.20
+    else:
+        return total_purchase
+

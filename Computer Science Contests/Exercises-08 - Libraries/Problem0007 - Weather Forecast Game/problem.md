@@ -19,17 +19,14 @@ An integer representing tomorrow's predicted temperature.
 21
 
 
-#PREPEND BEGIN
-import random
-#PREPEND END
+// PREPEND BEGIN
+// PREPEND END
 
-#TEMPLATE BEGIN
-def predict_temperature(today_temp):
-    # TODO: Write your code here
-    pass
-#TEMPLATE END
+// TEMPLATE BEGIN
+# Write your code here
+// TEMPLATE END
 
-#APPEND BEGIN
+// APPEND BEGIN
 # Read input
 today_temp = int(input())
 
@@ -49,4 +46,11 @@ else:
 #assert 18 <= result <= 22
 #result = predict_temperature(25)
 #assert 23 <= result <= 27
-#APPEND END
+
+// APPEND END
+
+## Solution please
+import random
+
+def predict_temperature(today_temp):
+    return today_temp + random.randint(-2, 2)

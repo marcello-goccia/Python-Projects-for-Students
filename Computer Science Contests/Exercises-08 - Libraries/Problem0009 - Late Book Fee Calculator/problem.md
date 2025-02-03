@@ -9,7 +9,7 @@ Fiction books: First 7 days free, then $2 per day
 Textbooks: First 14 days free, then $5 per day
 Reference books: First 10 days free, then $3 per day
 
-Write a function calculate_late_fees that takes the days_borrowed and the book_type and returns the total late fee for the book (integer)
+Write a function calculate_late_fees that takes the days_borrowed and the book_type as input parameters and returns the total late fee for the book (integer)
 
 ## Input Description
 Number of days the book is overdue (integer)
@@ -24,18 +24,17 @@ Total late fee for the book (integer)
 ## Output Samples
 6
 
-
-#PREPEND BEGIN
+// PREPEND BEGIN
 # No imports needed
-#PREPEND END
+// PREPEND END
 
-#TEMPLATE BEGIN
-def calculate_late_fees(days_borrowed, book_type):
-    # TODO: Write your code here
-    pass
-#TEMPLATE END
+// TEMPLATE BEGIN
 
-#APPEND BEGIN
+# Write your code here
+
+// TEMPLATE END
+
+// APPEND BEGIN
 # Read input
 x = input()
 days_borrowed, book_type = x.split()
@@ -44,8 +43,22 @@ days_borrowed = int(days_borrowed)
 # Call function and print result
 print(calculate_late_fees(days_borrowed, book_type))
 
-# Test cases
-#assert calculate_late_fees(7, 'fiction') == 0
-#assert calculate_late_fees(14, 'textbook') == 10
-#assert calculate_late_fees(20, 'reference') == 30
-#APPEND END
+// APPEND END
+
+
+## Solution
+def calculate_late_fees(days_borrowed, book_type):
+    if book_type == 'fiction':
+        free_days = 7
+        fee_per_day = 2
+    elif book_type == 'textbook':
+        free_days = 14
+        fee_per_day = 5
+    elif book_type == 'reference':
+        free_days = 10
+        fee_per_day = 3
+    else:
+        return 0  # Invalid book type
+
+    late_days = max(0, days_borrowed - free_days)
+    return late_days * fee_per_day

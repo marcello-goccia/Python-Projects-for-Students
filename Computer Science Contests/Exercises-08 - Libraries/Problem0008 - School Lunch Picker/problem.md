@@ -2,11 +2,14 @@
 School Lunch Picker
 
 ## Description
-Help the school cafeteria randomly assign daily specials! They have several menu items and need to pick one randomly each day.
 
-Write a function pick_lunch_special that takes a day number (1-5 for Monday-Friday) and returns a random menu number (1-5).
-The function should never return yesterday's menu number to avoid repetition.
+Help the school cafeteria randomly assign daily specials! They have several menu items and need to pick one randomly 
+each day.
 
+Write a function `pick_lunch_special` that takes two parameters:today's day number (1-5) and 
+yesterday's menu number (1-5). 
+The function should return a random menu number (1-5) that is different from yesterday's menu number 
+to avoid repetition.
 
 ## Input Description
 Two integers: today's day number (1-5) and yesterday's menu number (1-5).
@@ -21,18 +24,16 @@ An integer representing today's menu number (different from yesterday's).
 5
 
 
+// PREPEND BEGIN
+// PREPEND END
 
-#PREPEND BEGIN
-import random
-#PREPEND END
+// TEMPLATE BEGIN
 
-#TEMPLATE BEGIN
-def pick_lunch_special(day, yesterday_menu):
-    # TODO: Write your code here
-    pass
-#TEMPLATE END
+# Write your code here
 
-#APPEND BEGIN
+// TEMPLATE END
+
+// APPEND BEGIN
 # Read input
 x = input()
 day, yesterday_menu = map(int, x.split())
@@ -48,10 +49,14 @@ if lim1 <= output <= lim2 and output != yesterday_menu:
 else:
     print("Not valid")
 
+// APPEND END
 
-# Test cases
-#result = pick_lunch_special(2, 3)
-#assert 1 <= result <= 5 and result != 3
-#result = pick_lunch_special(1, 4)
-#assert 1 <= result <= 5 and result != 4
-#APPEND END
+
+## Solution
+import random
+
+def pick_lunch_special(day, yesterday_menu):
+    while True:
+        menu_number = random.randint(1, 5)
+        if menu_number != yesterday_menu:
+            return menu_number

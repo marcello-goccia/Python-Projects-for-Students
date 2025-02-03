@@ -25,25 +25,30 @@ Hello world! This is a test message.
 1
 
 
-#PREPEND BEGIN
+// PREPEND BEGIN
 # No imports needed
-#PREPEND END
+// PREPEND END
 
-#TEMPLATE BEGIN
-def calculate_message_cost(message):
-    # TODO: Write your code here
-    pass
-#TEMPLATE END
+// TEMPLATE BEGIN
 
-#APPEND BEGIN
+# Write your code here
+
+// TEMPLATE END
+
+// APPEND BEGIN
 # Read input
 message = input()
 
 # Call function and print result
 print(calculate_message_cost(message))
 
-# Test cases
-#assert calculate_message_cost('Hello') == 1
-#assert calculate_message_cost('This is a longer message!') == 2
-#assert calculate_message_cost('A' * 160) == 1
-#APPEND END
+// APPEND END
+
+
+## Solution
+
+def calculate_message_cost(message):
+    # Calculate the number of SMS needed
+    sms_count = (len(message) + 159) // 160
+    return sms_count
+
