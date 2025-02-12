@@ -46,7 +46,7 @@ numbers = list(map(int, input().split()))
 
 # Call the function and print result
 print(is_list_empty(numbers))
-
+//APPEND END
 ###### Solution
 
 def is_list_empty(numbers):

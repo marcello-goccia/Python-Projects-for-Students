@@ -33,13 +33,9 @@ numbers = [1, 2, 3, 4]
 
 ###### Code Template
 //PREPEND BEGIN
-# No imports needed
 //PREPEND END
 
 //TEMPLATE BEGIN
-
-# TODO: Write your code here
-
 //TEMPLATE END
 
 //APPEND BEGIN
@@ -47,7 +43,11 @@ numbers = [1, 2, 3, 4]
 numbers = list(map(int, input().split()))
 
 # Call the function and print result
-print(reverse_a_list(numbers))
+output = reverse_a_list(numbers)
+
+for i in output:
+    print(i, end=' ')
+//APPEND END
 
 ###### Solution
 def reverse_a_list(numbers):

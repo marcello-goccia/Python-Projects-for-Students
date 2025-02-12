@@ -46,8 +46,11 @@ numbers = [10, 20, 30]
 numbers = list(map(int, input().split()))
 
 # Call the function and print result
-print(list_without_first_element(numbers))
+my_list = list_without_first_element(numbers)
 
+for i in my_list:
+	print(i,  end=' ')
+//APPEND END
 
 ## Solution
 def list_without_first_element(numbers):

@@ -45,7 +45,7 @@ numbers = list(map(int, input().split()))
 
 # Call the function and print result
 print(sum_of_elements(numbers))
-
+//APPEND END
 
 ###### Solution
 def sum_of_elements(numbers):

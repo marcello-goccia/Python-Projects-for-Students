@@ -14,7 +14,7 @@ The input list is already initialized with integers.
 Return the last element in the list.
 
 ## Input Samples
-The functions take a list as input parameter.
+The function takes a list as input parameter.
 numbers = [10, 20, 30]
 
 ## Output Samples
@@ -48,7 +48,7 @@ numbers = list(map(int, input().split()))
 
 # Call the function and print result
 print(last_element_of_list(numbers))
-
+//APPEND END
 
 ## Solution
 

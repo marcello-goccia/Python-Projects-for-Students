@@ -46,7 +46,7 @@ numbers = list(map(int, input().split()))
 
 # Call the function and print result
 print(average_of_list_elements(numbers))
-
+//APPEND END
 
 ###### Solution
 def average_of_list_elements(numbers):

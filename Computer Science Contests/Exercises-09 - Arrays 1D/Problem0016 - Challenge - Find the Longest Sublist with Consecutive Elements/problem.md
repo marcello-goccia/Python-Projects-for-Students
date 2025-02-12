@@ -47,5 +47,6 @@ for i in range(len(numbers)):
 if len(current_sublist) > len(longest_sublist):
     longest_sublist = current_sublist
 
-print(longest_sublist)
+for i in longest_sublist:
+	print(i, end=" ")
 
