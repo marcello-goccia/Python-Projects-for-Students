@@ -67,9 +67,12 @@ print(sum_elements_in_list(matrix))
 #             print(matrix[row][col])
 #         else:
 #             print(matrix[row][col], end=' ')
+//APPEND END
+
 
 ###### Solution
 def sum_elements_in_list(matrix):
+    total_sum = 0
     for row in matrix:
         # Iterate through each element in the row
         for element in row:

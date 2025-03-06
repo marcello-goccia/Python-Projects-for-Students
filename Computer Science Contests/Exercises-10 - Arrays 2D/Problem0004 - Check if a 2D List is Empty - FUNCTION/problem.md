@@ -56,7 +56,11 @@ False
 
 //APPEND BEGIN
 # Read input
-n = int(input())  # Number of rows
+try:
+    n = int(input())  # Number of rows
+except ValueError:
+    n = 0
+
 matrix = []
 
 # For each row in the matrix
@@ -66,7 +70,7 @@ for i in range(n):
 
 # Call the function and print result
 print(is_list_empty(matrix))
-
+//APPEND END
 
 ###### Solution
 

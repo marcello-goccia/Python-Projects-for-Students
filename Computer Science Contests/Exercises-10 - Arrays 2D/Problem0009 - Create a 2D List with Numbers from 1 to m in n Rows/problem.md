@@ -68,6 +68,13 @@ cols = int(input())  # Number of cols
 # Call the function and print result
 matrix = create_2d_list(rows, cols)
 
+for row in range(rows):
+    for col in range(cols):
+        if col == cols - 1:
+            print(matrix[row][col])
+        else:
+            print(matrix[row][col], end=' ')
+//APPEND END
 
 ## Solution
 def create_2d_list(rows, cols):
@@ -80,12 +87,3 @@ def create_2d_list(rows, cols):
         print(" ".join(map(str, row)))
     
     return matrix
-
-
-matrix = []
-for _ in range(rows):
-    row = list(range(1, cols + 1))
-    matrix.append(row)
-
-for row in matrix:
-    print(" ".join(map(str, row)))

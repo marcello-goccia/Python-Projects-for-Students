@@ -8,7 +8,7 @@ You are given a 2D list. Write a program to calculate the average of all element
 The variable "matrix" is already initialized with a 2D list of integers.
 You need to calculate the average of all the elements in the matrix as an integer value and print it.
 
-## Input Description
+## Output Description
 Print the average of all the elements in the matrix.
 
 ## Input Samples

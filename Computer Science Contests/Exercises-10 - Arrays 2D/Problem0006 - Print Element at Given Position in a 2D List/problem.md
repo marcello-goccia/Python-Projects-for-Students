@@ -58,5 +58,5 @@ for i in range(n):
 
 ## Solution
 i = int(input())
-j = in(input())
+j = int(input())
 print(matrix[i][j])

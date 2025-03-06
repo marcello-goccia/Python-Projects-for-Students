@@ -89,12 +89,12 @@ new_value = int(input()) # element to chance
 matrix = modify_value(matrix, i, j, new_value)
 
 for row in range(n):
-    for col in range(m):
+    for col in range(matrix[row]):
         if col == m - 1:
             print(matrix[row][col])
         else:
             print(matrix[row][col], end=' ')
-
+//APPEND END
 
 ###### Solution
 # Read the row index, column index, and new value

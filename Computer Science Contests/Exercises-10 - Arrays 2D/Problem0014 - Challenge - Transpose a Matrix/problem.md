@@ -89,5 +89,13 @@ for i in range(len(matrix[0])):
     transpose.append(new_row)
 
 # Step 6: Print the transposed matrix
-for row in transpose:
-    print(row)
+for row in range(len(transpose)):
+    for col in range(len(transpose[row])):
+        if col == len(transpose[0]) - 1:
+            print(transpose[row][col])
+        else:
+            print(transpose[row][col], end=' ')
+
+
+
+

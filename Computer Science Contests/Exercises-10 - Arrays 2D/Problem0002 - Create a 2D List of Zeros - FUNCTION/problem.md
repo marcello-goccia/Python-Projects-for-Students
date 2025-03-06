@@ -63,7 +63,7 @@ for row in range(n):
             print(matrix[row][col])
         else:
             print(matrix[row][col], end=' ')
-
+//APPEND END
 
 ## Solution
 def create_2d_list_zeros(n, m):

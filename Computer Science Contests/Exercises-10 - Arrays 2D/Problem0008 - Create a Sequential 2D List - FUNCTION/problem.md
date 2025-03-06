@@ -78,6 +78,13 @@ cols = int(input())  # Number of cols
 # Call the function and print result
 matrix = modify_value(rows, cols)
 
+for row in range(rows):
+    for col in range(cols):
+        if col == cols - 1:
+            print(matrix[row][col])
+        else:
+            print(matrix[row][col], end=' ')
+//APPEND END
 
 ###### Solution
 
