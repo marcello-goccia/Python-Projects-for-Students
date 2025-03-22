@@ -45,11 +45,127 @@ pop
 
 
 ## Test Cases
-
+###########################
 Input:
+6
+push 5
+push 15
+push 25
+pop
+top
+pop
+
 
 Output:
+25
+15
+15
+
 
 ###########################
 
+Input:
+7
+push 1
+push 2
+push 3
+pop
+pop
+pop
+pop
 
+
+Out put:
+3
+2
+1
+Stack is empty
+
+
+###########################
+Input:
+8
+top
+push 100
+push 200
+pop
+push 300
+top
+pop
+pop
+
+
+Output:
+Stack is empty
+200
+300
+300
+100
+
+
+## Solution
+
+
+#include <iostream>
+#include <string>
+
+#define MAX_SIZE 100 // Maximum size of the stack
+
+class Stack {
+private:
+    int arr[MAX_SIZE]; // Array to store elements
+    int topIndex; // Index of the top element
+
+public:
+    Stack() {
+        topIndex = -1; // Initialize stack as empty
+    }
+
+    void push(int x) {
+        if (topIndex < MAX_SIZE - 1) {
+            arr[++topIndex] = x;
+        }
+    }
+
+    void pop() {
+        if (topIndex >= 0) {
+            std::cout << arr[topIndex--] << std::endl;
+        } else {
+            std::cout << "Stack is empty" << std::endl;
+        }
+    }
+
+    void top() {
+        if (topIndex >= 0) {
+            std::cout << arr[topIndex] << std::endl;
+        } else {
+            std::cout << "Stack is empty" << std::endl;
+        }
+    }
+};
+
+int main() {
+    int N;
+    std::cin >> N;
+    
+    Stack st; // Create a stack instance
+    std::string command;
+
+    for (int i = 0; i < N; ++i) {
+        std::cin >> command;
+        
+        if (command == "push") {
+            int x;
+            std::cin >> x;
+            st.push(x);
+        } 
+        else if (command == "pop") {
+            st.pop();
+        } 
+        else if (command == "top") {
+            st.top();
+        }
+    }
+
+    return 0;
+}

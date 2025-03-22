@@ -1,0 +1,9 @@
+8
+top
+push 100
+push 200
+pop
+push 300
+top
+pop
+pop
